@@ -78,7 +78,7 @@ instr:
 
 %%
 
-// Print the AST nicely
+// Print the AST
 void print_riscv_ast() {
     std::cout << "=== RISC-V AST ===\n";
     for (size_t i = 0; i < instructions.size(); i++) {
@@ -93,7 +93,7 @@ void print_riscv_ast() {
     std::cout << "=================\n";
 }
 
-// Generate AST from file
+// Generate AST 
 void generate_riscv_ast(const std::string &filename) {
     FILE *yyin = std::fopen(filename.c_str(), "r");
     if (!yyin) {
